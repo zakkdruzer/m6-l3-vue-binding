@@ -1,11 +1,16 @@
 <script setup>
-  import { ref } from 'vue'
+import { ref } from 'vue'
 
-  // TODO: declara tus variables reactivas con ref()
-  // Con <script setup> NO hay return: todo lo que declaras acá
-  // queda disponible en el template automáticamente.
+const nombre = ref('')
 </script>
 
 <template>
-  <!-- TODO: aquí va tu HTML con las directivas -->
+  <div class="ej-saludo">
+    <label>
+      Escribe tu nombre:
+      <input type="text" v-model="nombre" />
+    </label>
+
+    <h2>¡Hola, {{ nombre || 'visitante' }}!</h2>
+  </div>
 </template>
