@@ -15,9 +15,9 @@ const email = ref('')
   <div class="ej-modificadores">
     <section>
       <h3>Suma sin .number</h3>
-      <input type="number" v-model="a" placeholder="a" />
-      <input type="number" v-model="b" placeholder="b" />
-      <p>a + b = {{ a + b }} (tipo a: {{ typeof a }}, tipo b: {{ typeof b }})</p>
+      <input type="" v-model="a" placeholder="a" />
+      <input type="" v-model="b" placeholder="b" />
+      <p>a + b = {{a + b}} (tipo a: {{ typeof a }}, tipo b: {{ typeof b }})</p>
     </section>
 
     <section>
